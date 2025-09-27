@@ -1,6 +1,4 @@
--- ===================================================================
--- CRIAÇÃO DAS TABELAS
--- ===================================================================
+
 
 -- Criação da tabela de Autores
 CREATE TABLE autores (
@@ -31,10 +29,6 @@ CREATE TABLE emprestimos (
     data_devolucao DATE
 );
 
-
--- ===================================================================
--- INSERÇÃO DE DADOS
--- ===================================================================
 
 -- Inserção na tabela Autores
 INSERT INTO autores (nome_autor) VALUES
@@ -76,20 +70,17 @@ INSERT INTO emprestimos (id_cliente, id_livro, data_emprestimo, data_devolucao) 
 (10, 10, '2025-01-18', '2025-02-01');
 
 
--- ===================================================================
--- EXEMPLOS DE DELETE E UPDATE
--- ===================================================================
-
--- Deleção (DELETE)
--- DELETE FROM emprestimos WHERE id_emprestimo = 4;
-
--- Atualização (UPDATE)
--- UPDATE emprestimos SET data_devolucao = '2025-02-20' WHERE id_emprestimo = 2;
 
 
--- ===================================================================
--- CONSULTA COM JOIN
--- ===================================================================
+Deleção 
+
+ DELETE FROM emprestimos WHERE id_emprestimo = 4;
+
+Atualização (UPDATE)
+UPDATE emprestimos SET data_devolucao = '2025-02-20' WHERE id_emprestimo = 2;
+
+
+
 SELECT
     e.id_emprestimo,
     c.nome_cliente,
@@ -108,10 +99,7 @@ JOIN
 ORDER BY
     e.id_emprestimo;
 
-
--- ===================================================================
--- CONSULTA COM FILTRO (WHERE)
--- ===================================================================
+
 SELECT
     c.nome_cliente,
     l.titulo_livro,
