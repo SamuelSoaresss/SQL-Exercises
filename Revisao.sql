@@ -70,7 +70,7 @@ INSERT INTO emprestimos (id_cliente, id_livro, data_emprestimo, data_devolucao) 
 (10, 10, '2025-01-18', '2025-02-01');
 
 
-Deleção 
+Deleção (DELETE)
 
  DELETE FROM emprestimos WHERE id_emprestimo = 4;
 
