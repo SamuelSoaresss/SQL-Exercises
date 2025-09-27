@@ -68,9 +68,7 @@ INSERT INTO emprestimos (id_cliente, id_livro, data_emprestimo, data_devolucao) 
 (8, 8, '2025-03-03', '2025-03-17'),
 (9, 9, '2025-02-28', NULL),
 (10, 10, '2025-01-18', '2025-02-01');
-
-
-
+
 
 Deleção 
 
@@ -78,8 +76,7 @@ Deleção
 
 Atualização (UPDATE)
 UPDATE emprestimos SET data_devolucao = '2025-02-20' WHERE id_emprestimo = 2;
-
-
+
 
 SELECT
     e.id_emprestimo,
